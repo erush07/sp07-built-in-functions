@@ -22,3 +22,15 @@ You're building a number guessing game.
 4. Repeat until they get it right.
 5. When they guess it, tell them how many tries it took.
 '''
+
+import random
+
+iRand = random.randint(1,50)
+#iGuess = int(input("Guess a number from 1 to 50 "))
+
+while True:
+    # print(iRand)
+    iGuess = int(input("Guess a number from 1 to 50 "))
+    if iRand == iGuess:
+        print("Congrats!! You guessed it!!")
+        break

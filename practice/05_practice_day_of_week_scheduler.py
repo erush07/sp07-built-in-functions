@@ -24,3 +24,23 @@ You’re helping students know what to expect based on the day of the week.
    - Friday: "You made it to the weekend!"
    - Other: "Keep going!"
 '''
+
+from datetime import datetime
+
+now = datetime.now().isoweekday()
+
+if now == 1:
+    print("Today is Monday. Start strong!")
+elif now == 2:
+   print("Today is Tuesday. Keep going!")
+elif now == 3:
+   print("Today is Wednesday. You're halfway there!")
+elif now == 4:
+   print("Today is Thursday. Keep going!")
+elif now == 5:
+   print("Today is Friday. You made it to the weekend!")
+elif now == 6:
+   print("Today is Sunday. Keep going!")
+else:
+   print("Today is Sunday. Keep going!")
+   

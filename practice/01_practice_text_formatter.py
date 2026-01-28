@@ -21,3 +21,7 @@ You are designing a name tag generator for a conference.
 3. Print their name in this format: "LAST, First"
    (last name should be uppercase, first name should be capitalized)
 '''
+
+sFirstName = input("What is your first name? ").strip()
+sLastName = input("What is your Last name? ").upper().strip()
+print(f"{sLastName}, {sFirstName}")

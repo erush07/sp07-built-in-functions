@@ -21,3 +21,8 @@ You're making a tip calculator that prints results neatly.
 3. Print the original total and the tip, each rounded to 2 decimal places.
    Use f-strings for formatting.
 '''
+
+fBillTotal = float(input("What was your bill total? (##.##) "))
+fCalcTip = fBillTotal * .18
+fAfterTipTotal = fBillTotal + fCalcTip
+print(f"Your bill total was {round(fBillTotal,2)}. \nYour tip, calculated at 18% is {round(fCalcTip,2)}. \nYour new total is {round(fAfterTipTotal,2)}.\nThank you for your patronage!")

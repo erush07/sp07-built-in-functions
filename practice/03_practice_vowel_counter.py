@@ -21,3 +21,20 @@ You're checking how many vowels are in a word for a game.
    HINT: remember you can use a for loop to check each letter in a string
 3. Print the number of vowels.
 '''
+
+sWord = input("Give me a word: ").lower()
+iVowelCount = 0
+
+for sChar in sWord:
+    if sChar == "a":
+      iVowelCount += 1
+    if sChar == "e":
+      iVowelCount += 1
+    if sChar == "i":
+      iVowelCount += 1
+    if sChar == "o":
+      iVowelCount += 1
+    if sChar == "u":
+      iVowelCount += 1
+
+print(f"The total number of vowels in {sWord} is {iVowelCount}.")
